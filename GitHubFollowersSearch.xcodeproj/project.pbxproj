@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D79D4DEC2708C6DC003B94A8 /* GitHubFollowersSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79D4DEB2708C6DC003B94A8 /* GitHubFollowersSearchApp.swift */; };
-		D79D4DEE2708C6DC003B94A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79D4DED2708C6DC003B94A8 /* ContentView.swift */; };
 		D79D4DF02708C6DF003B94A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79D4DEF2708C6DF003B94A8 /* Assets.xcassets */; };
 		D79D4DF32708C6DF003B94A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79D4DF22708C6DF003B94A8 /* Preview Assets.xcassets */; };
+		D79D4DFA2708C77C003B94A8 /* GitHubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79D4DF92708C77C003B94A8 /* GitHubClient.swift */; };
+		D79D4DFD2708C7DF003B94A8 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D79D4DFC2708C7DF003B94A8 /* ComposableArchitecture */; };
+		D79D4DFF2708CCC8003B94A8 /* SearchFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79D4DFE2708CCC8003B94A8 /* SearchFeature.swift */; };
+		D79D4E012708E537003B94A8 /* FollowersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79D4E002708E537003B94A8 /* FollowersFeature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D79D4DE82708C6DC003B94A8 /* GitHubFollowersSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowersSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D79D4DEB2708C6DC003B94A8 /* GitHubFollowersSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowersSearchApp.swift; sourceTree = "<group>"; };
-		D79D4DED2708C6DC003B94A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D79D4DEF2708C6DF003B94A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D79D4DF22708C6DF003B94A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D79D4DF92708C77C003B94A8 /* GitHubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClient.swift; sourceTree = "<group>"; };
+		D79D4DFE2708CCC8003B94A8 /* SearchFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFeature.swift; sourceTree = "<group>"; };
+		D79D4E002708E537003B94A8 /* FollowersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersFeature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79D4DFD2708C7DF003B94A8 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				D79D4DEB2708C6DC003B94A8 /* GitHubFollowersSearchApp.swift */,
-				D79D4DED2708C6DC003B94A8 /* ContentView.swift */,
+				D79D4DF92708C77C003B94A8 /* GitHubClient.swift */,
+				D79D4DFE2708CCC8003B94A8 /* SearchFeature.swift */,
+				D79D4E002708E537003B94A8 /* FollowersFeature.swift */,
 				D79D4DEF2708C6DF003B94A8 /* Assets.xcassets */,
 				D79D4DF12708C6DF003B94A8 /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = GitHubFollowersSearch;
+			packageProductDependencies = (
+				D79D4DFC2708C7DF003B94A8 /* ComposableArchitecture */,
+			);
 			productName = GitHubFollowersSearch;
 			productReference = D79D4DE82708C6DC003B94A8 /* GitHubFollowersSearch.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = D79D4DDF2708C6DC003B94A8;
+			packageReferences = (
+				D79D4DFB2708C7DF003B94A8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = D79D4DE92708C6DC003B94A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D79D4DEE2708C6DC003B94A8 /* ContentView.swift in Sources */,
+				D79D4DFF2708CCC8003B94A8 /* SearchFeature.swift in Sources */,
+				D79D4DFA2708C77C003B94A8 /* GitHubClient.swift in Sources */,
+				D79D4E012708E537003B94A8 /* FollowersFeature.swift in Sources */,
 				D79D4DEC2708C6DC003B94A8 /* GitHubFollowersSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +293,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D79D4DFB2708C7DF003B94A8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D79D4DFC2708C7DF003B94A8 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D79D4DFB2708C7DF003B94A8 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D79D4DE02708C6DC003B94A8 /* Project object */;
 }
